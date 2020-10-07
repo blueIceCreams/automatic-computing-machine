@@ -121,3 +121,39 @@ lo        Link encap:Local Loopback
 ```
 6. 接下来就可以愉快的玩耍啦QwQ
 
+## 安装win10-无法安装到磁盘【WoeUsb版】
+* 在Linux系统上使用WoeUsb制作win10U盘启动器， 安装时报“windows无法安装到这个磁盘。选中的磁盘具有MBR分区表。在EFI系统上，Windows只能安装到GPT磁盘”。这是因为该磁盘是传统BIOS而非UEFI。
+* 解决方法：
+    1. 进入系统BIOS确认已切换为Legacy模式
+    2. 启动器要选择USB不带UEFI的那个
+    3. 以上步骤之后不行可采取以下方式
+        编辑U盘中的grub.cfg文件，内容全部替换如下：
+        ``` sh
+        default=1
+        timeout=15
+        color_normal=light-cyan/dark-gray
+        menu_color_normal=black/light-cyan
+        menu_color_highlight=white/black
+        
+        menuentry "Start Windows Installation"{
+          insmod ntfs
+          insmod search_label
+          search --no-floppy --set=root --label FA00-5777 --hint hd0,msdos1
+          ntldr /bootmgr
+          boot
+        }
+        
+        menuentry "Boot from the first hard drive"{
+          insmod ntfs
+          insmod chain
+          insmod part_msdos
+          insmod part_gpt
+          set root=(hd1)
+          chainloader +1
+          boot
+        }
+        ```
+
+## 安装win10-无法安装到磁盘【windows10系统创建的U盘介质】
+* 安装时报“windows无法安装到这个磁盘。选中的磁盘具有MBR分区表。在EFI系统上，Windows只能安装到GPT磁盘”。这是因为该磁盘是传统BIOS而非UEFI。
+* 解决方法：将U盘根目录下的bootmgr.efi文件和efi文件夹删除，再重新插上电脑即可，这样会默认使用传统BIOS启动（此操作启动时会有小段时间的黑屏，等待即可，重启也稍慢，要耐心鸭）
