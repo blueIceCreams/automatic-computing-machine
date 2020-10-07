@@ -127,8 +127,8 @@ lo        Link encap:Local Loopback
     1. 进入系统BIOS确认已切换为Legacy模式
     2. 启动器要选择USB不带UEFI的那个
     3. 以上步骤之后不行可采取以下方式
-        编辑U盘中的grub.cfg文件，内容全部替换如下：
-        ``` sh
+        编辑U盘中的grub.cfg文件，内容全部如下(高亮部分为原内容)：
+        ``` sh{11,12}
         default=1
         timeout=15
         color_normal=light-cyan/dark-gray
