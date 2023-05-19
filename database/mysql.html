@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>mySQL | 小R谈编程</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/myblog/assets/css/0.styles.33d4ebe4.css" as="style"><link rel="preload" href="/myblog/assets/js/app.2ec99ef4.js" as="script"><link rel="preload" href="/myblog/assets/js/3.9de28f1c.js" as="script"><link rel="preload" href="/myblog/assets/js/12.838ecb37.js" as="script"><link rel="prefetch" href="/myblog/assets/js/10.d4f57499.js"><link rel="prefetch" href="/myblog/assets/js/11.bfa5bc8c.js"><link rel="prefetch" href="/myblog/assets/js/13.83798a41.js"><link rel="prefetch" href="/myblog/assets/js/14.7e648c9a.js"><link rel="prefetch" href="/myblog/assets/js/15.a173a2d6.js"><link rel="prefetch" href="/myblog/assets/js/16.f7516a11.js"><link rel="prefetch" href="/myblog/assets/js/17.f0064ca7.js"><link rel="prefetch" href="/myblog/assets/js/18.3998d3de.js"><link rel="prefetch" href="/myblog/assets/js/19.e1f30831.js"><link rel="prefetch" href="/myblog/assets/js/20.81ce25b5.js"><link rel="prefetch" href="/myblog/assets/js/21.7539047e.js"><link rel="prefetch" href="/myblog/assets/js/22.df5b9553.js"><link rel="prefetch" href="/myblog/assets/js/23.81c34996.js"><link rel="prefetch" href="/myblog/assets/js/24.bdf5819a.js"><link rel="prefetch" href="/myblog/assets/js/4.d6a6f2d9.js"><link rel="prefetch" href="/myblog/assets/js/5.d8e07a22.js"><link rel="prefetch" href="/myblog/assets/js/6.a1bdc27c.js"><link rel="prefetch" href="/myblog/assets/js/7.34369036.js"><link rel="prefetch" href="/myblog/assets/js/8.2ba10528.js"><link rel="prefetch" href="/myblog/assets/js/9.3de0d101.js"><link rel="prefetch" href="/myblog/assets/js/vendors~flowchart.36a6b2b5.js">
+    <link rel="stylesheet" href="/myblog/assets/css/0.styles.33d4ebe4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myblog/" class="home-link router-link-active"><!----> <span class="site-name">小R谈编程</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myblog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java" class="mobile-dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/java/java_learn.html" class="nav-link">
+  Java学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/java_question.html" class="nav-link">
+  Java问题
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/java_timerTask.html" class="nav-link">
+  Java定时程序
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/maven.html" class="nav-link">
+  maven
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web" class="dropdown-title"><span class="title">Web</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web" class="mobile-dropdown-title"><span class="title">Web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/web/web.html" class="nav-link">
+  web基础
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/web/javascript.html" class="nav-link">
+  javascript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Hadoop" class="dropdown-title"><span class="title">Hadoop</span> <span class="arrow down"></span></button> <button type="button" aria-label="Hadoop" class="mobile-dropdown-title"><span class="title">Hadoop</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_install.html" class="nav-link">
+  Hadoop安装
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_base.html" class="nav-link">
+  Hadoop入门
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_hdfs.html" class="nav-link">
+  HDFS
+</a></li></ul></div></div><div class="nav-item"><a href="/myblog/linux/linux_base.html" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/myblog/docker/docker.html" class="nav-link">
+  docker
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="others" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="others" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/codemanage/codemanage_README.html" class="nav-link">
+  代码管理
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/codemanage/vuepress_learn.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myblog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java" class="mobile-dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/java/java_learn.html" class="nav-link">
+  Java学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/java_question.html" class="nav-link">
+  Java问题
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/java_timerTask.html" class="nav-link">
+  Java定时程序
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/maven.html" class="nav-link">
+  maven
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web" class="dropdown-title"><span class="title">Web</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web" class="mobile-dropdown-title"><span class="title">Web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/web/web.html" class="nav-link">
+  web基础
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/web/javascript.html" class="nav-link">
+  javascript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Hadoop" class="dropdown-title"><span class="title">Hadoop</span> <span class="arrow down"></span></button> <button type="button" aria-label="Hadoop" class="mobile-dropdown-title"><span class="title">Hadoop</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_install.html" class="nav-link">
+  Hadoop安装
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_base.html" class="nav-link">
+  Hadoop入门
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_hdfs.html" class="nav-link">
+  HDFS
+</a></li></ul></div></div><div class="nav-item"><a href="/myblog/linux/linux_base.html" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/myblog/docker/docker.html" class="nav-link">
+  docker
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="others" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="others" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/codemanage/codemanage_README.html" class="nav-link">
+  代码管理
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/codemanage/vuepress_learn.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>mySQL</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog/database/mysql.html#杀掉进程" class="sidebar-link">杀掉进程</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/myblog/database/mysql.html#给用户授权" class="sidebar-link">给用户授权</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/myblog/database/mysql.html#查看mysql版本" class="sidebar-link">查看mysql版本</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/myblog/database/mysql.html#时间函数" class="sidebar-link">时间函数</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="杀掉进程"><a href="#杀掉进程" class="header-anchor">#</a> 杀掉进程</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">-- 查看当前已连接的线程</span>
+<span class="token keyword">show</span> processlist<span class="token punctuation">;</span>
+</code></pre></div><table><thead><tr><th style="text-align:center;">ID</th> <th style="text-align:center;">User</th> <th style="text-align:center;">Host</th> <th style="text-align:center;">db</th> <th style="text-align:center;">Command</th> <th style="text-align:center;">Time</th> <th style="text-align:center;">State</th> <th style="text-align:center;">Info</th></tr></thead> <tbody><tr><td style="text-align:center;">451058</td> <td style="text-align:center;">root</td> <td style="text-align:center;">198.156.0.12:61876</td> <td style="text-align:center;">shopping</td> <td style="text-align:center;">Query</td> <td style="text-align:center;">0</td> <td style="text-align:center;">starting</td> <td style="text-align:center;">show processlist</td></tr></tbody></table> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">-- 杀掉进程</span>
+<span class="token keyword">kill</span> 进程ID<span class="token punctuation">;</span>
+</code></pre></div><h2 id="给用户授权"><a href="#给用户授权" class="header-anchor">#</a> 给用户授权</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">grant</span> <span class="token keyword">select</span> <span class="token keyword">on</span> mysql<span class="token punctuation">.</span><span class="token keyword">proc</span> <span class="token keyword">to</span> <span class="token string">'ryan'</span><span class="token variable">@'%'</span><span class="token punctuation">;</span>
+flush <span class="token keyword">privileges</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="查看mysql版本"><a href="#查看mysql版本" class="header-anchor">#</a> 查看mysql版本</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">select</span> version<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="时间函数"><a href="#时间函数" class="header-anchor">#</a> 时间函数</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">-- 时间戳转时间</span>
+<span class="token keyword">select</span> from_unixtime<span class="token punctuation">(</span><span class="token number">1590571625</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 获取月份</span>
+<span class="token keyword">select</span> <span class="token keyword">month</span><span class="token punctuation">(</span>from_unixtime<span class="token punctuation">(</span><span class="token number">1590571625</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 获取小时</span>
+<span class="token keyword">select</span> <span class="token keyword">hour</span><span class="token punctuation">(</span>from_unixtime<span class="token punctuation">(</span><span class="token number">1590571625</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 获取分钟</span>
+<span class="token keyword">select</span> <span class="token keyword">minute</span><span class="token punctuation">(</span>from_unixtime<span class="token punctuation">(</span><span class="token number">1590571625</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 获取秒</span>
+<span class="token keyword">select</span> <span class="token keyword">second</span><span class="token punctuation">(</span>from_unixtime<span class="token punctuation">(</span><span class="token number">1590571625</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 时间转时间戳</span>
+<span class="token keyword">select</span> unix_timestamp<span class="token punctuation">(</span><span class="token string">'2020-05-27 17:27:05'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 获取该时间戳的整点时间 如2020-05-27 17:00:00</span>
+<span class="token keyword">select</span> concat<span class="token punctuation">(</span>from_unixtime<span class="token punctuation">(</span><span class="token number">1590571625</span><span class="token punctuation">,</span> <span class="token string">'%Y-%m-%d %H'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">':00:00'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/myblog/assets/js/app.2ec99ef4.js" defer></script><script src="/myblog/assets/js/3.9de28f1c.js" defer></script><script src="/myblog/assets/js/12.838ecb37.js" defer></script>
+  </body>
+</html>

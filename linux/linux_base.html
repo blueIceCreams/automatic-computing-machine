@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>linux基础 | 小R谈编程</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/myblog/assets/css/0.styles.33d4ebe4.css" as="style"><link rel="preload" href="/myblog/assets/js/app.2ec99ef4.js" as="script"><link rel="preload" href="/myblog/assets/js/3.9de28f1c.js" as="script"><link rel="preload" href="/myblog/assets/js/22.df5b9553.js" as="script"><link rel="prefetch" href="/myblog/assets/js/10.d4f57499.js"><link rel="prefetch" href="/myblog/assets/js/11.bfa5bc8c.js"><link rel="prefetch" href="/myblog/assets/js/12.838ecb37.js"><link rel="prefetch" href="/myblog/assets/js/13.83798a41.js"><link rel="prefetch" href="/myblog/assets/js/14.7e648c9a.js"><link rel="prefetch" href="/myblog/assets/js/15.a173a2d6.js"><link rel="prefetch" href="/myblog/assets/js/16.f7516a11.js"><link rel="prefetch" href="/myblog/assets/js/17.f0064ca7.js"><link rel="prefetch" href="/myblog/assets/js/18.3998d3de.js"><link rel="prefetch" href="/myblog/assets/js/19.e1f30831.js"><link rel="prefetch" href="/myblog/assets/js/20.81ce25b5.js"><link rel="prefetch" href="/myblog/assets/js/21.7539047e.js"><link rel="prefetch" href="/myblog/assets/js/23.81c34996.js"><link rel="prefetch" href="/myblog/assets/js/24.bdf5819a.js"><link rel="prefetch" href="/myblog/assets/js/4.d6a6f2d9.js"><link rel="prefetch" href="/myblog/assets/js/5.d8e07a22.js"><link rel="prefetch" href="/myblog/assets/js/6.a1bdc27c.js"><link rel="prefetch" href="/myblog/assets/js/7.34369036.js"><link rel="prefetch" href="/myblog/assets/js/8.2ba10528.js"><link rel="prefetch" href="/myblog/assets/js/9.3de0d101.js"><link rel="prefetch" href="/myblog/assets/js/vendors~flowchart.36a6b2b5.js">
+    <link rel="stylesheet" href="/myblog/assets/css/0.styles.33d4ebe4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myblog/" class="home-link router-link-active"><!----> <span class="site-name">小R谈编程</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myblog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java" class="mobile-dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/java/java_learn.html" class="nav-link">
+  Java学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/java_question.html" class="nav-link">
+  Java问题
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/java_timerTask.html" class="nav-link">
+  Java定时程序
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/maven.html" class="nav-link">
+  maven
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web" class="dropdown-title"><span class="title">Web</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web" class="mobile-dropdown-title"><span class="title">Web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/web/web.html" class="nav-link">
+  web基础
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/web/javascript.html" class="nav-link">
+  javascript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Hadoop" class="dropdown-title"><span class="title">Hadoop</span> <span class="arrow down"></span></button> <button type="button" aria-label="Hadoop" class="mobile-dropdown-title"><span class="title">Hadoop</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_install.html" class="nav-link">
+  Hadoop安装
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_base.html" class="nav-link">
+  Hadoop入门
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_hdfs.html" class="nav-link">
+  HDFS
+</a></li></ul></div></div><div class="nav-item"><a href="/myblog/linux/linux_base.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Linux
+</a></div><div class="nav-item"><a href="/myblog/docker/docker.html" class="nav-link">
+  docker
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="others" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="others" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/codemanage/codemanage_README.html" class="nav-link">
+  代码管理
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/codemanage/vuepress_learn.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myblog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java" class="mobile-dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/java/java_learn.html" class="nav-link">
+  Java学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/java_question.html" class="nav-link">
+  Java问题
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/java_timerTask.html" class="nav-link">
+  Java定时程序
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/maven.html" class="nav-link">
+  maven
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web" class="dropdown-title"><span class="title">Web</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web" class="mobile-dropdown-title"><span class="title">Web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/web/web.html" class="nav-link">
+  web基础
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/web/javascript.html" class="nav-link">
+  javascript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Hadoop" class="dropdown-title"><span class="title">Hadoop</span> <span class="arrow down"></span></button> <button type="button" aria-label="Hadoop" class="mobile-dropdown-title"><span class="title">Hadoop</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_install.html" class="nav-link">
+  Hadoop安装
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_base.html" class="nav-link">
+  Hadoop入门
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_hdfs.html" class="nav-link">
+  HDFS
+</a></li></ul></div></div><div class="nav-item"><a href="/myblog/linux/linux_base.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Linux
+</a></div><div class="nav-item"><a href="/myblog/docker/docker.html" class="nav-link">
+  docker
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="others" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="others" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/codemanage/codemanage_README.html" class="nav-link">
+  代码管理
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/codemanage/vuepress_learn.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>linux基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog/linux/linux_base.html#virtualbox网络配置" class="sidebar-link">virtualBox网络配置</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/myblog/linux/linux_base.html#安装win10-无法安装到磁盘【woeusb版】" class="sidebar-link">安装win10-无法安装到磁盘【WoeUsb版】</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/myblog/linux/linux_base.html#安装win10-无法安装到磁盘【windows10系统创建的u盘介质】" class="sidebar-link">安装win10-无法安装到磁盘【windows10系统创建的U盘介质】</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/myblog/linux/linux_base.html#关于linux的软连接" class="sidebar-link">关于linux的软连接</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="virtualbox网络配置"><a href="#virtualbox网络配置" class="header-anchor">#</a> virtualBox网络配置</h2> <ol><li>管理-&gt;全局设定-&gt;网络
+1.1 选择仅主机(Host-Only)网络
+1.2 添加仅主机(Host-Only)网络
+1.3 编辑刚创建的那个网络，这里可以编辑IP地址和子网掩码</li> <li>选择某一虚拟机，设置-&gt;网络-&gt;网卡1
+2.1 启动网络连接， 连接方式为“仅主机(Host-Only)网络”
+2.2 界面名称选择刚创建的那个网络
+2.3 高级里面混杂模式设置为“全部允许”, 勾选“接入网线”
+2.4 这里需要记住MAC地址，待会要用</li> <li>选择网卡2
+3.1 启动网络连接， 连接方式为“桥接网卡”
+3.2 界面名称选择自己能连到网络的适配器（此处查看自己电脑网络连接中的网络适配器即可）
+3.3 高级里面混杂模式设置为“全部允许”, 勾选“接入网线”</li> <li>启动虚拟机, 切换至root用户</li> <li>运行</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code>// 会看到有eth5这样的, 而且没有ipv4地址
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># ifconfig</span>
+eth4      Link encap:Ethernet  HWaddr 08:00:27:20:0C:C8  
+          inet addr:192.168.0.126  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::a00:27ff:fe20:cc8/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:1255 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:40 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:93282 <span class="token punctuation">(</span><span class="token number">91.0</span> KiB<span class="token punctuation">)</span>  TX bytes:3516 <span class="token punctuation">(</span><span class="token number">3.4</span> KiB<span class="token punctuation">)</span>
+
+eth5      Link encap:Ethernet  HWaddr 08:00:27:CD:42:1C  
+          inet6 addr: fe80::a00:27ff:fecd:421c/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:22 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:8 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:2761 <span class="token punctuation">(</span><span class="token number">2.6</span> KiB<span class="token punctuation">)</span>  TX bytes:1152 <span class="token punctuation">(</span><span class="token number">1.1</span> KiB<span class="token punctuation">)</span>
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:60 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:60 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:18264 <span class="token punctuation">(</span><span class="token number">17.8</span> KiB<span class="token punctuation">)</span>  TX bytes:18264 <span class="token punctuation">(</span><span class="token number">17.8</span> KiB<span class="token punctuation">)</span>
+
+// 执行这个会看到所有的eth, 其实这一步不需要的哈，看看就好
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># cat /etc/udev/rules.d/70-persistent-net.rules</span>
+<span class="token comment"># PCI device 0x8086:0x100e (e1000)</span>
+<span class="token assign-left variable">SUBSYSTEM</span><span class="token operator">==</span><span class="token string">&quot;net&quot;</span>, <span class="token assign-left variable">ACTION</span><span class="token operator">==</span><span class="token string">&quot;add&quot;</span>, <span class="token assign-left variable">DRIVERS</span><span class="token operator">==</span><span class="token string">&quot;?*&quot;</span>, ATTR<span class="token punctuation">{</span>address<span class="token punctuation">}</span><span class="token operator">==</span><span class="token string">&quot;08:00:27:8e:81:fb&quot;</span>, ATTR<span class="token punctuation">{</span>type<span class="token punctuation">}</span><span class="token operator">==</span><span class="token string">&quot;1&quot;</span>, <span class="token assign-left variable">KERNEL</span><span class="token operator">==</span><span class="token string">&quot;eth*&quot;</span>, <span class="token assign-left variable">NAME</span><span class="token operator">=</span><span class="token string">&quot;eth0&quot;</span>
+
+<span class="token comment"># PCI device 0x8086:0x100e (e1000)</span>
+<span class="token assign-left variable">SUBSYSTEM</span><span class="token operator">==</span><span class="token string">&quot;net&quot;</span>, <span class="token assign-left variable">ACTION</span><span class="token operator">==</span><span class="token string">&quot;add&quot;</span>, <span class="token assign-left variable">DRIVERS</span><span class="token operator">==</span><span class="token string">&quot;?*&quot;</span>, ATTR<span class="token punctuation">{</span>address<span class="token punctuation">}</span><span class="token operator">==</span><span class="token string">&quot;08:00:27:87:da:a7&quot;</span>, ATTR<span class="token punctuation">{</span>type<span class="token punctuation">}</span><span class="token operator">==</span><span class="token string">&quot;1&quot;</span>, <span class="token assign-left variable">KERNEL</span><span class="token operator">==</span><span class="token string">&quot;eth*&quot;</span>, <span class="token assign-left variable">NAME</span><span class="token operator">=</span><span class="token string">&quot;eth1&quot;</span>
+
+<span class="token comment"># PCI device 0x8086:0x100e (e1000)</span>
+<span class="token assign-left variable">SUBSYSTEM</span><span class="token operator">==</span><span class="token string">&quot;net&quot;</span>, <span class="token assign-left variable">ACTION</span><span class="token operator">==</span><span class="token string">&quot;add&quot;</span>, <span class="token assign-left variable">DRIVERS</span><span class="token operator">==</span><span class="token string">&quot;?*&quot;</span>, ATTR<span class="token punctuation">{</span>address<span class="token punctuation">}</span><span class="token operator">==</span><span class="token string">&quot;08:00:27:6f:7d:60&quot;</span>, ATTR<span class="token punctuation">{</span>type<span class="token punctuation">}</span><span class="token operator">==</span><span class="token string">&quot;1&quot;</span>, <span class="token assign-left variable">KERNEL</span><span class="token operator">==</span><span class="token string">&quot;eth*&quot;</span>, <span class="token assign-left variable">NAME</span><span class="token operator">=</span><span class="token string">&quot;eth2&quot;</span>
+
+<span class="token comment"># PCI device 0x8086:0x100e (e1000)</span>
+<span class="token assign-left variable">SUBSYSTEM</span><span class="token operator">==</span><span class="token string">&quot;net&quot;</span>, <span class="token assign-left variable">ACTION</span><span class="token operator">==</span><span class="token string">&quot;add&quot;</span>, <span class="token assign-left variable">DRIVERS</span><span class="token operator">==</span><span class="token string">&quot;?*&quot;</span>, ATTR<span class="token punctuation">{</span>address<span class="token punctuation">}</span><span class="token operator">==</span><span class="token string">&quot;08:00:27:41:2e:42&quot;</span>, ATTR<span class="token punctuation">{</span>type<span class="token punctuation">}</span><span class="token operator">==</span><span class="token string">&quot;1&quot;</span>, <span class="token assign-left variable">KERNEL</span><span class="token operator">==</span><span class="token string">&quot;eth*&quot;</span>, <span class="token assign-left variable">NAME</span><span class="token operator">=</span><span class="token string">&quot;eth3&quot;</span>
+
+<span class="token comment"># PCI device 0x8086:0x100e (e1000)</span>
+<span class="token assign-left variable">SUBSYSTEM</span><span class="token operator">==</span><span class="token string">&quot;net&quot;</span>, <span class="token assign-left variable">ACTION</span><span class="token operator">==</span><span class="token string">&quot;add&quot;</span>, <span class="token assign-left variable">DRIVERS</span><span class="token operator">==</span><span class="token string">&quot;?*&quot;</span>, ATTR<span class="token punctuation">{</span>address<span class="token punctuation">}</span><span class="token operator">==</span><span class="token string">&quot;08:00:27:20:0c:c8&quot;</span>, ATTR<span class="token punctuation">{</span>type<span class="token punctuation">}</span><span class="token operator">==</span><span class="token string">&quot;1&quot;</span>, <span class="token assign-left variable">KERNEL</span><span class="token operator">==</span><span class="token string">&quot;eth*&quot;</span>, <span class="token assign-left variable">NAME</span><span class="token operator">=</span><span class="token string">&quot;eth4&quot;</span>
+
+<span class="token comment"># PCI device 0x8086:0x100e (e1000)</span>
+<span class="token assign-left variable">SUBSYSTEM</span><span class="token operator">==</span><span class="token string">&quot;net&quot;</span>, <span class="token assign-left variable">ACTION</span><span class="token operator">==</span><span class="token string">&quot;add&quot;</span>, <span class="token assign-left variable">DRIVERS</span><span class="token operator">==</span><span class="token string">&quot;?*&quot;</span>, ATTR<span class="token punctuation">{</span>address<span class="token punctuation">}</span><span class="token operator">==</span><span class="token string">&quot;08:00:27:cd:42:1c&quot;</span>, ATTR<span class="token punctuation">{</span>type<span class="token punctuation">}</span><span class="token operator">==</span><span class="token string">&quot;1&quot;</span>, <span class="token assign-left variable">KERNEL</span><span class="token operator">==</span><span class="token string">&quot;eth*&quot;</span>, <span class="token assign-left variable">NAME</span><span class="token operator">=</span><span class="token string">&quot;eth5&quot;</span>
+
+// 切换目录
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># cd /etc/sysconfig/network-scripts/</span>
+
+// 复制ifcfg-eth0为ifcfg-eth*
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># cp ifcfg-eth0 ifcfg-eth5</span>
+
+// 编辑设置 设置的IP与刚创建的那个网络在同一网段、网关即可
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># vim ifcfg-eth5</span>
+<span class="token assign-left variable">DEVICE</span><span class="token operator">=</span>eth5
+<span class="token assign-left variable">HWADDR</span><span class="token operator">=</span>08:00:27:CD:42:1C
+<span class="token assign-left variable">TYPE</span><span class="token operator">=</span>Ethernet
+<span class="token comment">#UUID=06195422-01e9-40eb-a685-5ae8f153f567</span>
+<span class="token assign-left variable">ONBOOT</span><span class="token operator">=</span>yes
+<span class="token assign-left variable">NM_CONTROLLED</span><span class="token operator">=</span>yes
+<span class="token assign-left variable">BOOTPROTO</span><span class="token operator">=</span>static
+<span class="token assign-left variable">IPADDR</span><span class="token operator">=</span><span class="token number">192.168</span>.210.8
+<span class="token assign-left variable">NETMASK</span><span class="token operator">=</span><span class="token number">255.255</span>.255.0
+<span class="token assign-left variable">GATEWAY</span><span class="token operator">=</span><span class="token number">192.168</span>.210.1
+
+// 重启网络服务
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># service network restart</span>
+
+// 再查看ifconfig  IP地址正常了
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># ifconfig</span>
+eth4      Link encap:Ethernet  HWaddr 08:00:27:20:0C:C8  
+          inet addr:192.168.0.126  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::a00:27ff:fe20:cc8/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:4515 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:47 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:689954 <span class="token punctuation">(</span><span class="token number">673.7</span> KiB<span class="token punctuation">)</span>  TX bytes:4014 <span class="token punctuation">(</span><span class="token number">3.9</span> KiB<span class="token punctuation">)</span>
+
+eth5      Link encap:Ethernet  HWaddr 08:00:27:CD:42:1C  
+          inet addr:192.168.210.8  Bcast:192.168.210.255  Mask:255.255.255.0
+          inet6 addr: fe80::a00:27ff:fecd:421c/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:374 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:457 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:33965 <span class="token punctuation">(</span><span class="token number">33.1</span> KiB<span class="token punctuation">)</span>  TX bytes:34415 <span class="token punctuation">(</span><span class="token number">33.6</span> KiB<span class="token punctuation">)</span>
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:276 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:276 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:43392 <span class="token punctuation">(</span><span class="token number">42.3</span> KiB<span class="token punctuation">)</span>  TX bytes:43392 <span class="token punctuation">(</span><span class="token number">42.3</span> KiB<span class="token punctuation">)</span>
+</code></pre></div><ol start="6"><li>接下来就可以愉快的玩耍啦QwQ</li></ol> <h2 id="安装win10-无法安装到磁盘【woeusb版】"><a href="#安装win10-无法安装到磁盘【woeusb版】" class="header-anchor">#</a> 安装win10-无法安装到磁盘【WoeUsb版】</h2> <ul><li>在Linux系统上使用WoeUsb制作win10U盘启动器， 安装时报“windows无法安装到这个磁盘。选中的磁盘具有MBR分区表。在EFI系统上，Windows只能安装到GPT磁盘”。这是因为该磁盘是传统BIOS而非UEFI。</li> <li>解决方法：
+<ol><li>进入系统BIOS确认已切换为Legacy模式</li> <li>启动器要选择USB不带UEFI的那个</li> <li>以上步骤之后不行可采取以下方式
+编辑U盘中的grub.cfg文件，内容全部如下(高亮部分为原内容)：<div class="language-sh extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-sh"><code><span class="token assign-left variable">default</span><span class="token operator">=</span><span class="token number">1</span>
+<span class="token assign-left variable">timeout</span><span class="token operator">=</span><span class="token number">15</span>
+<span class="token assign-left variable">color_normal</span><span class="token operator">=</span>light-cyan/dark-gray
+<span class="token assign-left variable">menu_color_normal</span><span class="token operator">=</span>black/light-cyan
+<span class="token assign-left variable">menu_color_highlight</span><span class="token operator">=</span>white/black
+
+menuentry <span class="token string">&quot;Start Windows Installation&quot;</span><span class="token punctuation">{</span>
+  insmod ntfs
+  insmod search_label
+  search --no-floppy <span class="token parameter variable">--set</span><span class="token operator">=</span>root <span class="token parameter variable">--label</span> FA00-5777 <span class="token parameter variable">--hint</span> hd0,msdos1
+  ntldr /bootmgr
+  boot
+<span class="token punctuation">}</span>
+
+menuentry <span class="token string">&quot;Boot from the first hard drive&quot;</span><span class="token punctuation">{</span>
+  insmod ntfs
+  insmod chain
+  insmod part_msdos
+  insmod part_gpt
+  <span class="token builtin class-name">set</span> <span class="token assign-left variable">root</span><span class="token operator">=</span><span class="token punctuation">(</span>hd1<span class="token punctuation">)</span>
+  chainloader +1
+  boot
+<span class="token punctuation">}</span>
+</code></pre></div></li></ol></li></ul> <h2 id="安装win10-无法安装到磁盘【windows10系统创建的u盘介质】"><a href="#安装win10-无法安装到磁盘【windows10系统创建的u盘介质】" class="header-anchor">#</a> 安装win10-无法安装到磁盘【windows10系统创建的U盘介质】</h2> <ul><li>安装时报“windows无法安装到这个磁盘。选中的磁盘具有MBR分区表。在EFI系统上，Windows只能安装到GPT磁盘”。这是因为该磁盘是传统BIOS而非UEFI。</li> <li>解决方法：将U盘根目录下的bootmgr.efi文件和efi文件夹删除，再重新插上电脑即可，这样会默认使用传统BIOS启动（此操作启动时会有小段时间的黑屏，等待即可，重启也稍慢，要耐心鸭）</li></ul> <h2 id="关于linux的软连接"><a href="#关于linux的软连接" class="header-anchor">#</a> 关于linux的软连接</h2> <div class="language- extra-class"><pre class="language-text"><code>// 创建一个目录
+# mkdir test_chk
+// 在目录下创建一个文本
+# touch test_chk/test.txt
+// 文本写入内容
+# echo hello &gt; test_chk/test.txt
+// 创建目录的软连接
+# ln -s test_chk test_chk_ln
+// 删除软连接(不删除原数据)
+# rm -rf ./test_chk_ln
+// 错误的删除命令(会将原目录下的内容删除，而软连接仍然存在)
+# rm -rf ./test_chk_ln/
+</code></pre></div><p>Linux两台机器间的文件传输(使用scp)</p> <div class="language- extra-class"><pre class="language-text"><code>// 将文件传到198.168.0.2上的/home/files/
+scp /home/tmpFiles/test.txt root@198.168.0.2:/home/files/
+
+// 将文件传到198.168.0.2上的/home/files/,通过端口2223
+scp -P 2223 /home/tmpFiles/test.txt root@198.168.0.2:/home/files/
+
+// 将文件(包括文件夹本身)传到198.168.0.2上的/home/files/
+scp -r /home/tmpFiles/ root@198.168.0.2:/home/files/
+
+// 将文件(不包括文件夹本身)传到198.168.0.2上的/home/files/
+scp /home/tmpFiles/* root@198.168.0.2:/home/files/
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/myblog/assets/js/app.2ec99ef4.js" defer></script><script src="/myblog/assets/js/3.9de28f1c.js" defer></script><script src="/myblog/assets/js/22.df5b9553.js" defer></script>
+  </body>
+</html>

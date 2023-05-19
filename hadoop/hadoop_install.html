@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>hadoop安装 | 小R谈编程</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/myblog/assets/css/0.styles.33d4ebe4.css" as="style"><link rel="preload" href="/myblog/assets/js/app.2ec99ef4.js" as="script"><link rel="preload" href="/myblog/assets/js/3.9de28f1c.js" as="script"><link rel="preload" href="/myblog/assets/js/17.f0064ca7.js" as="script"><link rel="prefetch" href="/myblog/assets/js/10.d4f57499.js"><link rel="prefetch" href="/myblog/assets/js/11.bfa5bc8c.js"><link rel="prefetch" href="/myblog/assets/js/12.838ecb37.js"><link rel="prefetch" href="/myblog/assets/js/13.83798a41.js"><link rel="prefetch" href="/myblog/assets/js/14.7e648c9a.js"><link rel="prefetch" href="/myblog/assets/js/15.a173a2d6.js"><link rel="prefetch" href="/myblog/assets/js/16.f7516a11.js"><link rel="prefetch" href="/myblog/assets/js/18.3998d3de.js"><link rel="prefetch" href="/myblog/assets/js/19.e1f30831.js"><link rel="prefetch" href="/myblog/assets/js/20.81ce25b5.js"><link rel="prefetch" href="/myblog/assets/js/21.7539047e.js"><link rel="prefetch" href="/myblog/assets/js/22.df5b9553.js"><link rel="prefetch" href="/myblog/assets/js/23.81c34996.js"><link rel="prefetch" href="/myblog/assets/js/24.bdf5819a.js"><link rel="prefetch" href="/myblog/assets/js/4.d6a6f2d9.js"><link rel="prefetch" href="/myblog/assets/js/5.d8e07a22.js"><link rel="prefetch" href="/myblog/assets/js/6.a1bdc27c.js"><link rel="prefetch" href="/myblog/assets/js/7.34369036.js"><link rel="prefetch" href="/myblog/assets/js/8.2ba10528.js"><link rel="prefetch" href="/myblog/assets/js/9.3de0d101.js"><link rel="prefetch" href="/myblog/assets/js/vendors~flowchart.36a6b2b5.js">
+    <link rel="stylesheet" href="/myblog/assets/css/0.styles.33d4ebe4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myblog/" class="home-link router-link-active"><!----> <span class="site-name">小R谈编程</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myblog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java" class="mobile-dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/java/java_learn.html" class="nav-link">
+  Java学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/java_question.html" class="nav-link">
+  Java问题
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/java_timerTask.html" class="nav-link">
+  Java定时程序
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/maven.html" class="nav-link">
+  maven
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web" class="dropdown-title"><span class="title">Web</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web" class="mobile-dropdown-title"><span class="title">Web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/web/web.html" class="nav-link">
+  web基础
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/web/javascript.html" class="nav-link">
+  javascript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Hadoop" class="dropdown-title"><span class="title">Hadoop</span> <span class="arrow down"></span></button> <button type="button" aria-label="Hadoop" class="mobile-dropdown-title"><span class="title">Hadoop</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_install.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Hadoop安装
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_base.html" class="nav-link">
+  Hadoop入门
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_hdfs.html" class="nav-link">
+  HDFS
+</a></li></ul></div></div><div class="nav-item"><a href="/myblog/linux/linux_base.html" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/myblog/docker/docker.html" class="nav-link">
+  docker
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="others" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="others" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/codemanage/codemanage_README.html" class="nav-link">
+  代码管理
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/codemanage/vuepress_learn.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myblog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java" class="mobile-dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/java/java_learn.html" class="nav-link">
+  Java学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/java_question.html" class="nav-link">
+  Java问题
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/java_timerTask.html" class="nav-link">
+  Java定时程序
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/maven.html" class="nav-link">
+  maven
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web" class="dropdown-title"><span class="title">Web</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web" class="mobile-dropdown-title"><span class="title">Web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/web/web.html" class="nav-link">
+  web基础
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/web/javascript.html" class="nav-link">
+  javascript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Hadoop" class="dropdown-title"><span class="title">Hadoop</span> <span class="arrow down"></span></button> <button type="button" aria-label="Hadoop" class="mobile-dropdown-title"><span class="title">Hadoop</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_install.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Hadoop安装
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_base.html" class="nav-link">
+  Hadoop入门
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_hdfs.html" class="nav-link">
+  HDFS
+</a></li></ul></div></div><div class="nav-item"><a href="/myblog/linux/linux_base.html" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/myblog/docker/docker.html" class="nav-link">
+  docker
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="others" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="others" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/codemanage/codemanage_README.html" class="nav-link">
+  代码管理
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/codemanage/vuepress_learn.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>hadoop安装</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog/hadoop/hadoop_install.html#基础设施" class="sidebar-link">基础设施</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="基础设施"><a href="#基础设施" class="header-anchor">#</a> 基础设施</h2> <ol><li>设置IP地址，参考 linux基础-&gt;virtualBox网络配置</li> <li>设置主机名、本机的IP到本机名的映射关系</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code>// 设置主机名
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># vim /etc/sysconfig/network</span>
+<span class="token assign-left variable">NETWORKING</span><span class="token operator">=</span>yes
+<span class="token assign-left variable"><span class="token environment constant">HOSTNAME</span></span><span class="token operator">=</span>node01
+
+// 设置本机的IP到本机名的映射关系
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># vim /etc/hosts</span>
+<span class="token number">127.0</span>.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+<span class="token number">192.168</span>.210.8   node01
+// 这里如果有多个节点的话 继续追加即可 如192.168.210.9   node02
+
+// 关闭防火墙
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># service iptables stop</span>
+iptables: Setting chains to policy ACCEPT: filter          <span class="token punctuation">[</span>  OK  <span class="token punctuation">]</span>
+iptables: Flushing firewall rules:                         <span class="token punctuation">[</span>  OK  <span class="token punctuation">]</span>
+iptables: Unloading modules:                               <span class="token punctuation">[</span>  OK  <span class="token punctuation">]</span>
+
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># chkconfig iptables off</span>
+
+// 关闭selinux
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># vim /etc/selinux/config</span>
+<span class="token comment"># This file controls the state of SELinux on the system.</span>
+<span class="token comment"># SELINUX= can take one of these three values:</span>
+<span class="token comment">#     enforcing - SELinux security policy is enforced.</span>
+<span class="token comment">#     permissive - SELinux prints warnings instead of enforcing.</span>
+<span class="token comment">#     disabled - No SELinux policy is loaded.</span>
+<span class="token comment"># SELINUX=enforcing</span>
+<span class="token assign-left variable">SELINUX</span><span class="token operator">=</span>disabled
+<span class="token comment"># SELINUXTYPE= can take one of these two values:</span>
+<span class="token comment">#     targeted - Targeted processes are protected,</span>
+<span class="token comment">#     mls - Multi Level Security protection.</span>
+<span class="token assign-left variable">SELINUXTYPE</span><span class="token operator">=</span>targeted
+
+// 时间同步
+// 查看是否已安装ntp
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># rpm -qa | grep ntp</span>
+fontpackages-filesystem-1.41-1.1.el6.noarch
+ntp-4.2.6p5-1.el6.centos.x86_64
+ntpdate-4.2.6p5-1.el6.centos.x86_64
+
+未安装则执行yum <span class="token function">install</span> ntp -y进行在线安装或离线安装吧
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># vim /etc/ntp.conf</span>
+  server ntp1.aliyun.com
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># service ntpd start</span>
+Starting ntpd:                                             <span class="token punctuation">[</span>  OK  <span class="token punctuation">]</span>
+// 设置开机启动
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># chkconfig ntpd on</span>
+
+// 查看运行状态
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># service ntpd status</span>
+ntpd <span class="token punctuation">(</span>pid  <span class="token number">3052</span><span class="token punctuation">)</span> is running<span class="token punctuation">..</span>.
+
+// 查看同步情况
+<span class="token punctuation">[</span>root@ryan ~<span class="token punctuation">]</span><span class="token comment"># ntpstat</span>
+unsynchronised
+  <span class="token function">time</span> server re-starting
+   polling server every <span class="token number">8</span> s
+</code></pre></div><ol start="3"><li>检查JDK版本是否为1.8，不是的话，参考这里进行安装配置</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token punctuation">[</span>root@node01 ~<span class="token punctuation">]</span><span class="token comment"># java -version</span>
+<span class="token function">java</span> version <span class="token string">&quot;1.8.0_181&quot;</span>
+Java<span class="token punctuation">(</span>TM<span class="token punctuation">)</span> SE Runtime Environment <span class="token punctuation">(</span>build <span class="token number">1.8</span>.0_181-b13<span class="token punctuation">)</span>
+Java HotSpot<span class="token punctuation">(</span>TM<span class="token punctuation">)</span> <span class="token number">64</span>-Bit Server VM <span class="token punctuation">(</span>build <span class="token number">25.181</span>-b13, mixed mode<span class="token punctuation">)</span>
+</code></pre></div><ol start="4"><li>ssh免密登录</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code>// 验证是否能免密登录 
+// 能的话就说明这一步可以跳过啦 
+// 不能的话 输入密码登录后 会生成/root/.ssh
+<span class="token punctuation">[</span>root@node01 ~<span class="token punctuation">]</span><span class="token comment"># ssh localhost</span>
+The authenticity of <span class="token function">host</span> <span class="token string">'localhost (::1)'</span> can<span class="token string">'t be established.
+RSA key fingerprint is da:8d:c8:53:8b:94:7f:c2:b4:9d:5e:bf:6d:24:48:65.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '</span>localhost<span class="token string">' (RSA) to the list of known hosts.
+root@localhost'</span>s password:
+Last login: Sun Sep  <span class="token number">6</span> <span class="token number">11</span>:11:45 <span class="token number">2020</span> from <span class="token number">192.168</span>.210.6
+
+<span class="token punctuation">[</span>root@node01 ~<span class="token punctuation">]</span><span class="token comment"># ll -a /root/</span>
+drwx------   <span class="token number">2</span> root root  <span class="token number">4096</span> Sep  <span class="token number">6</span> <span class="token number">11</span>:25 .ssh
+
+<span class="token punctuation">[</span>root@node01 ~<span class="token punctuation">]</span><span class="token comment"># cd .ssh/</span>
+
+<span class="token punctuation">[</span>root@node01 .ssh<span class="token punctuation">]</span><span class="token comment"># ls</span>
+known_hosts
+
+<span class="token punctuation">[</span>root@node01 .ssh<span class="token punctuation">]</span><span class="token comment"># cat known_hosts </span>
+localhost ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAlue7K7APr2Vf9U5fpWaQjzkaxfefwZkweNZoxW+z8mYg6T7F31rQimlOBcpvfuQ/PCuEQu/rgfnrMNYvL1pZt1/VDHsIjn/JqcMPGwCFzFpISJIjPzlXg+2dF6HROBXdLm2kEveSYHbk1sBfTO886dujTgf4uQ7SUFIZD4g+Vt6rTfVHEKOllyOl3NCE12c2qA+3wNQRYhhvi/u2GfABdIG5oOSpUyzfUWGqE5e3tCphISSN7rqZi3vT+Qo/B1Twq1MwwW2XFXt+D5O1fYRvS6sUgQ5WUJthzdIAxG034IfNYD/VPSiKRKCL5T+aUz91+RrbWgDSmyInEqVa8X1kvw<span class="token operator">==</span>
+
+// 生成公钥
+<span class="token punctuation">[</span>root@node01 ~<span class="token punctuation">]</span><span class="token comment"># ssh-keygen -t dsa -P '' -f /root/.ssh/id_dsa</span>
+Generating public/private dsa key pair.
+Your identification has been saved <span class="token keyword">in</span> /root/.ssh/id_dsa.
+Your public key has been saved <span class="token keyword">in</span> /root/.ssh/id_dsa.pub.
+The key fingerprint is:
+8c:60:49:5a:f4:4a:db:60:57:81:c2:9f:cb:72:4d:89 root@node01
+The key's randomart image is:
++--<span class="token punctuation">[</span> DSA <span class="token number">1024</span><span class="token punctuation">]</span>----+
+<span class="token operator">|</span>   o+  .o.       <span class="token operator">|</span>
+<span class="token operator">|</span>   +oo<span class="token punctuation">..</span>         <span class="token operator">|</span>
+<span class="token operator">|</span>  <span class="token builtin class-name">.</span> Booo <span class="token builtin class-name">.</span>       <span class="token operator">|</span>
+<span class="token operator">|</span>   + BEoo        <span class="token operator">|</span>
+<span class="token operator">|</span>    o.o+S        <span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token builtin class-name">.</span> + <span class="token builtin class-name">.</span>        <span class="token operator">|</span>
+<span class="token operator">|</span>     o           <span class="token operator">|</span>
+<span class="token operator">|</span>                 <span class="token operator">|</span>
+<span class="token operator">|</span>                 <span class="token operator">|</span>
++-----------------+
+
+// 只要其他节点机器持有/root/.ssh/authorized_keys 就能ssh免密登录对应的机器
+<span class="token punctuation">[</span>root@node01 ~<span class="token punctuation">]</span><span class="token comment"># cat /root/.ssh/id_dsa.pub &gt;&gt; /root/.ssh/authorized_keys</span>
+<span class="token punctuation">[</span>root@node01 ~<span class="token punctuation">]</span><span class="token comment"># ll -a ./.ssh/</span>
+total <span class="token number">24</span>
+drwx------  <span class="token number">2</span> root root <span class="token number">4096</span> Sep  <span class="token number">6</span> <span class="token number">11</span>:37 <span class="token builtin class-name">.</span>
+dr-xr-x---. <span class="token number">8</span> root root <span class="token number">4096</span> Sep  <span class="token number">6</span> <span class="token number">11</span>:32 <span class="token punctuation">..</span>
+-rw-r--r--  <span class="token number">1</span> root root  <span class="token number">601</span> Sep  <span class="token number">6</span> <span class="token number">11</span>:37 authorized_keys
+-rw-------  <span class="token number">1</span> root root  <span class="token number">672</span> Sep  <span class="token number">6</span> <span class="token number">11</span>:35 id_dsa
+-rw-r--r--  <span class="token number">1</span> root root  <span class="token number">601</span> Sep  <span class="token number">6</span> <span class="token number">11</span>:35 id_dsa.pub
+-rw-r--r--  <span class="token number">1</span> root root  <span class="token number">391</span> Sep  <span class="token number">6</span> <span class="token number">11</span>:25 known_hosts
+<span class="token punctuation">[</span>root@node01 ~<span class="token punctuation">]</span><span class="token comment"># cat ./.ssh/authorized_keys </span>
+ssh-dss AAAAB3NzaC1kc3MAAACBAPORkHSyhOBmSC8Ia5G177fn83AnhgEhTljVDRaMUkdhbzUbV1mmSdsbd2pBIeM295Do689tg8AHiitf7WKoAtkl3mmYAiIdqQx7h+nxZCA3np7Xoemyo/BMO4+R5HhnpdaBwt5OSVnezKDtHKa7MCkVPzM2xM464qEHDK96nV0RAAAAFQD9ymgmh6CeC1T2cEwIsY3R5OTS1QAAAIB6wvaPYp1QcL6/VgVuxtGjySj+WucUSlb2DOfPnH/EJcyTdFgnJEjWq8d9oEDwm4LYIpfABLuVxSAKanG8RlMkBi+gkeERicyodFkFUft+KbwR5BVEBf0DZsvTR5facKiy9ijMpqemjCo3HcdN1rmBELywkicCD4OZIXcC/nIbgwAAAIEAxb8Dk1NNkePL2dpqc1G6rd8T+BRyLE4inzcEDxBgUktCNEPr2pODzkcwIlUS+QMI9aZyyp8FjGThrtqgBJKyX3WjlZDvLKhT7s9g4eEvEoaxBzk0XkTOOxZpmgSGwvtB8TaAwHD4legXVAIsVMdy5eXcATqGl+Dz3ORy1wNv3P0<span class="token operator">=</span> root@node01
+
+// 验证是否能ssh免密登录： 先退出当前连接，再ssh登录，不用输入密码说明ok了
+<span class="token punctuation">[</span>root@node01 ~<span class="token punctuation">]</span><span class="token comment"># exit </span>
+<span class="token builtin class-name">logout</span>
+Connection to localhost closed.
+<span class="token punctuation">[</span>root@node01 ~<span class="token punctuation">]</span><span class="token comment"># ssh localhost</span>
+Last login: Sun Sep  <span class="token number">6</span> <span class="token number">11</span>:26:22 <span class="token number">2020</span> from localhost
+<span class="token punctuation">[</span>root@node01 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/myblog/assets/js/app.2ec99ef4.js" defer></script><script src="/myblog/assets/js/3.9de28f1c.js" defer></script><script src="/myblog/assets/js/17.f0064ca7.js" defer></script>
+  </body>
+</html>

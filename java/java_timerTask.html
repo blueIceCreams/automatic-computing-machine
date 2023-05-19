@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Java定时程序 | 小R谈编程</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/myblog/assets/css/0.styles.33d4ebe4.css" as="style"><link rel="preload" href="/myblog/assets/js/app.2ec99ef4.js" as="script"><link rel="preload" href="/myblog/assets/js/3.9de28f1c.js" as="script"><link rel="preload" href="/myblog/assets/js/20.81ce25b5.js" as="script"><link rel="prefetch" href="/myblog/assets/js/10.d4f57499.js"><link rel="prefetch" href="/myblog/assets/js/11.bfa5bc8c.js"><link rel="prefetch" href="/myblog/assets/js/12.838ecb37.js"><link rel="prefetch" href="/myblog/assets/js/13.83798a41.js"><link rel="prefetch" href="/myblog/assets/js/14.7e648c9a.js"><link rel="prefetch" href="/myblog/assets/js/15.a173a2d6.js"><link rel="prefetch" href="/myblog/assets/js/16.f7516a11.js"><link rel="prefetch" href="/myblog/assets/js/17.f0064ca7.js"><link rel="prefetch" href="/myblog/assets/js/18.3998d3de.js"><link rel="prefetch" href="/myblog/assets/js/19.e1f30831.js"><link rel="prefetch" href="/myblog/assets/js/21.7539047e.js"><link rel="prefetch" href="/myblog/assets/js/22.df5b9553.js"><link rel="prefetch" href="/myblog/assets/js/23.81c34996.js"><link rel="prefetch" href="/myblog/assets/js/24.bdf5819a.js"><link rel="prefetch" href="/myblog/assets/js/4.d6a6f2d9.js"><link rel="prefetch" href="/myblog/assets/js/5.d8e07a22.js"><link rel="prefetch" href="/myblog/assets/js/6.a1bdc27c.js"><link rel="prefetch" href="/myblog/assets/js/7.34369036.js"><link rel="prefetch" href="/myblog/assets/js/8.2ba10528.js"><link rel="prefetch" href="/myblog/assets/js/9.3de0d101.js"><link rel="prefetch" href="/myblog/assets/js/vendors~flowchart.36a6b2b5.js">
+    <link rel="stylesheet" href="/myblog/assets/css/0.styles.33d4ebe4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myblog/" class="home-link router-link-active"><!----> <span class="site-name">小R谈编程</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myblog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java" class="mobile-dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/java/java_learn.html" class="nav-link">
+  Java学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/java_question.html" class="nav-link">
+  Java问题
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/java_timerTask.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Java定时程序
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/maven.html" class="nav-link">
+  maven
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web" class="dropdown-title"><span class="title">Web</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web" class="mobile-dropdown-title"><span class="title">Web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/web/web.html" class="nav-link">
+  web基础
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/web/javascript.html" class="nav-link">
+  javascript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Hadoop" class="dropdown-title"><span class="title">Hadoop</span> <span class="arrow down"></span></button> <button type="button" aria-label="Hadoop" class="mobile-dropdown-title"><span class="title">Hadoop</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_install.html" class="nav-link">
+  Hadoop安装
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_base.html" class="nav-link">
+  Hadoop入门
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_hdfs.html" class="nav-link">
+  HDFS
+</a></li></ul></div></div><div class="nav-item"><a href="/myblog/linux/linux_base.html" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/myblog/docker/docker.html" class="nav-link">
+  docker
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="others" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="others" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/codemanage/codemanage_README.html" class="nav-link">
+  代码管理
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/codemanage/vuepress_learn.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myblog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java" class="mobile-dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/java/java_learn.html" class="nav-link">
+  Java学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/java_question.html" class="nav-link">
+  Java问题
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/java_timerTask.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Java定时程序
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/java/maven.html" class="nav-link">
+  maven
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web" class="dropdown-title"><span class="title">Web</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web" class="mobile-dropdown-title"><span class="title">Web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/web/web.html" class="nav-link">
+  web基础
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/web/javascript.html" class="nav-link">
+  javascript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Hadoop" class="dropdown-title"><span class="title">Hadoop</span> <span class="arrow down"></span></button> <button type="button" aria-label="Hadoop" class="mobile-dropdown-title"><span class="title">Hadoop</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_install.html" class="nav-link">
+  Hadoop安装
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_base.html" class="nav-link">
+  Hadoop入门
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/hadoop/hadoop_hdfs.html" class="nav-link">
+  HDFS
+</a></li></ul></div></div><div class="nav-item"><a href="/myblog/linux/linux_base.html" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/myblog/docker/docker.html" class="nav-link">
+  docker
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="others" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="others" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog/codemanage/codemanage_README.html" class="nav-link">
+  代码管理
+</a></li><li class="dropdown-item"><!----> <a href="/myblog/codemanage/vuepress_learn.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Java定时程序</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog/java/java_timerTask.html#简介" class="sidebar-link">简介</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/myblog/java/java_timerTask.html#java-util-timer版" class="sidebar-link">java.util.Timer版</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/myblog/java/java_timerTask.html#linux-crontab版" class="sidebar-link">Linux crontab版</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h2> <ul><li>通常会有定时接入数据到库中，或者对库表数据进行统计计算的需求，而这类需求可由Java程序来定时完成。当前整理了两种方案来将Java程序部署到linux上。</li></ul> <h2 id="java-util-timer版"><a href="#java-util-timer版" class="header-anchor">#</a> java.util.Timer版</h2> <ol><li>创建类继承 java.util.TimerTask 类，重写 run 方法（要执行的任务逻辑由run方法来调）</li> <li>在main方法中声明 java.util.Timer 对象，调用其 schedule 或 scheduleAtFixedRate 方法即可实现定时
+<ul><li>scheduleAtFixedRate(TimerTask, firstTime, period) 若设置的开始时间已过去，则启动后会补上已过时间内的任务运行(即错过几次就连续执行几次)</li> <li>schedule(TimerTask, firstTime, period) 若设置的开始时间已过去，则启动后只补上一次执行，执行完后每过period 毫秒都会执行一次任务。</li></ul></li> <li>这个方法部署到Linux很简单，只需要手动运行一次main方法即可</li></ol> <h2 id="linux-crontab版"><a href="#linux-crontab版" class="header-anchor">#</a> Linux crontab版</h2> <ol><li>在main方法中调用要执行的任务逻辑，就是一个普通的Java程序，不需要设置定时器，定时器是通过linux的crontab来设置的</li> <li>创建两个文件夹，如 /opt/pro1 及 /opt/pro1/lib<div class="language-linux extra-class"><pre class="language-text"><code>mkdir /opt/pro1
+mkdir /opt/pro1/lib
+</code></pre></div></li> <li>将程序打包成jar，与程序所用到的jar放置到 /opt/pro1/lib 下</li> <li>创建脚本文件/opt/pro1/start.sh, 编辑<div class="language-linux extra-class"><pre class="language-text"><code>touch /opt/pro1/start.sh
+vim /opt/pro1/start.sh
+</code></pre></div>写入以下内容：<div class="language-linux extra-class"><pre class="language-text"><code>#! /bin/sh
+# 程序配置文件所在目录
+class_path=&quot;./conf/&quot;
+# main方法所在类，这里假设在Core
+java_exe=com.ryan.Core
+# 载入程序运行所需jar包
+for each_lib in $(ls /opt/pro1/lib); do
+	class_path=$class_path:/opt/pro1/lib/$each_lib
+done
+exec java -classpath $class_path $java_exe
+</code></pre></div></li> <li>设置定时任务<div class="language-linux extra-class"><pre class="language-text"><code>crontab -e
+	// 追加以下内容
+	0 * * * *	/opt/pro1/start.sh &gt; /dev/null 2&gt;&amp;1
+
+// 查看当前所有定时任务
+crontab -l
+</code></pre></div></li> <li>若到点后start.sh文件报无法运行的错误，需这样执行<div class="language-linux extra-class"><pre class="language-text"><code>// 添加执行权限
+chmod +x start.sh
+
+// 修改文件编码格式
+vim start.sh
+按esc键后 输入:set ff=unix后回车即可
+// 若输入:set ff回车可查看当前文件编码格式喔
+</code></pre></div></li></ol> <hr> <p><em>就这些啦~</em></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/myblog/assets/js/app.2ec99ef4.js" defer></script><script src="/myblog/assets/js/3.9de28f1c.js" defer></script><script src="/myblog/assets/js/20.81ce25b5.js" defer></script>
+  </body>
+</html>
